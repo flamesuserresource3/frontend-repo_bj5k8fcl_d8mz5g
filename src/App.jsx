@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Pricing from './components/Pricing';
+import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Hero />
         <Features />
         <Pricing />
+        <Testimonials />
         <section id="cta" className="bg-slate-900 py-16 text-white">
           <div className="mx-auto max-w-7xl px-6">
             <div className="flex flex-col items-start justify-between gap-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 p-8 sm:flex-row sm:items-center">

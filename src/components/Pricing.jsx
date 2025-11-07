@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Crown } from 'lucide-react';
+import { Check, Crown, ArrowRight } from 'lucide-react';
 
 const tiers = [
   {
@@ -66,9 +66,10 @@ const Pricing = () => {
               </ul>
               <a
                 href="#cta"
-                className={`mt-8 inline-flex w-full items-center justify-center rounded-lg px-5 py-3 text-sm font-medium transition ${tier.highlighted ? 'bg-slate-900 text-white hover:bg-slate-800' : 'bg-white text-slate-900 ring-1 ring-slate-200 hover:bg-slate-50'}`}
+                className={`mt-8 inline-flex w-full items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-medium transition ${tier.highlighted ? 'bg-slate-900 text-white hover:bg-slate-800' : 'bg-white text-slate-900 ring-1 ring-slate-200 hover:bg-slate-50'}`}
               >
                 {tier.cta}
+                <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           ))}
